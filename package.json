@@ -1,0 +1,21 @@
+{
+  "name": "iot-broker",
+  "version": "1.0.0",
+  "description": "MQTT Broker and Websocket Server for Bytee Smartlife",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx tsc && node ./dist"
+  },
+  "author": "M. Irfan",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "aedes": "^0.51.0",
+    "aedes-server-factory": "^0.2.1"
+  }
+}
