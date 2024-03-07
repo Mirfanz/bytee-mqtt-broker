@@ -15,6 +15,9 @@ aedes.on("client", (client) => {
 aedes.on("clientDisconnect", (client) => {
   console.log("Client Disconnect", client.id);
 });
+aedes.on("publish", (packet, client) => {
+  console.log("Message", packet.payload.toString());
+});
 
 const httpServer = createServer(aedes, { ws: true });
 const broker = createServer(aedes);
